@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Resume Analyzer</h4>
+            </div>
+            <div class="card-body">
+                <form action="/" method="POST" enctype="multipart/form-data">
+                    <!-- Name field -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <!-- Class field -->
+                    <div class="mb-3">
+                        <label for="class" class="form-label">Year:</label>
+                        <input type="text" class="form-control" id="class" name="class" placeholder="Enter your class" required>
+                    </div>
+
+                    <!-- Section field -->
+                    <div class="mb-3">
+                        <label for="section" class="form-label">Section:</label>
+                        <select class="form-select" id="section" name="section" required>
+                            <option value="CSE-A">CSE-A</option>
+                            <option value="CSE-B">CSE-B</option>
+                            <option value="CSE-C">CSE-C</option>
+
+                        </select>
+                    </div>
+
+                    <!-- Roll No field -->
+                    <div class="mb-3">
+                        <label for="rollNo" class="form-label">Roll No:</label>
+                        <input type="text" class="form-control" id="rollNo" name="rollNo" placeholder="Enter your roll number" required>
+                    </div>
+
+                    <!-- College field (dropdown) -->
+                    <div class="mb-3">
+                        <label for="college" class="form-label">College:</label>
+                        <select class="form-select" id="college" name="college" required>
+                            <option value="NRI Institute Of Technology" selected>NRI Institute Of Technology</option>
+                        </select>
+                    </div>
+
+                    <!-- File upload (resume) -->
+                    <div class="mb-3">
+                        <label for="resume" class="form-label">Upload Resume:</label>
+                        <input class="form-control" type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+                    </div>
+
+                    <!-- Submit button -->
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
